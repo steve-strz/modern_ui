@@ -1,6 +1,6 @@
 <template>
   <div id="tile">
-    <div class="container">
+    <div class="container" :style="{backgroundColor:color, boxShadow: color, height: height, width: width}">
         <div class="top">
             <div class="title">
                 {{title}}
@@ -22,13 +22,19 @@ export default {
   name: 'tile',
   data(){
       return{
-          title: this.title_p,
+          title: this.title_tile,
+          color: this.bg_color,
+          height: this.height_tile,
+          width: this.width_tile
       }
   },
   components: {
     
   },
-  props:['title_p', 'bg_color']
+  props:['title_tile', 'bg_color', 'height_tile', 'width_tile'],
+  methods:{
+      
+  }
 }
 </script>
 

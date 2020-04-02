@@ -53,7 +53,7 @@ export default {
     width: 250px;
     background-color: rgb(101, 193, 221);
     transition: width 0.15s, height 0.15s;
-    box-shadow: 5px 5px grey;
+    box-shadow: 5px 5px pink;
 }
 .container:hover{
     height: 410px;
